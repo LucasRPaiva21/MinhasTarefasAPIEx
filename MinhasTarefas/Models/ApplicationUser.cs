@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Identity;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MinhasTarefas.Models
 {
-    public class ApplicationUser
+    public class ApplicationUser : IdentityUser
     {
         public string FullName { get; set; }
         [ForeignKey("UsuarioId")]
